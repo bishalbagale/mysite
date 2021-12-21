@@ -1,0 +1,6 @@
+
+taxonomies = [
+    # You can enable/disable RSS
+    {name = "categories", feed = true},
+    {name = "tags", feed = true},
+    ]

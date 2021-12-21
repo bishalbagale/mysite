@@ -1,0 +1,24 @@
+base_url = "http://bishalbagale.com.np"
+title = "bishalbagale"
+description = ""
+generate_feed = true
+build_search_index = false
+theme = "after-dark"
+[markdown]
+
+highlight_code = true
+taxonomies = [
+    # You can enable/disable RSS
+    {name = "categories", feed = true},
+    {name = "tags", feed = true},
+    ]
+[extra]
+author = "B.Bagale"
+after_dark_menu = [
+    {url = "$BASE_URL", name = "Blogs"},
+    {url = "$BASE_URL/poems", name = "Poetry"},
+    
+  
+    ]
+
+after_dark_title = "Blogs"
