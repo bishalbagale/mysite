@@ -17,6 +17,7 @@ author = "B.Bagale"
 after_dark_menu = [
     {url = "$BASE_URL", name = "Blogs"},
     {url = "$BASE_URL/poems", name = "Poetry"},
+    {url = "$BASE_URL/darlings", name = "Darlings"},
     
   
     ]
