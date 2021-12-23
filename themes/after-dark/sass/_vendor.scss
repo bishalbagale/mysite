@@ -45,6 +45,9 @@ a:not([itemprop="contact"]) {
   text-decoration: none;
   border-bottom: 1px solid #ff2e88
 }
+
+
+
 a[itemprop="contact"]{
   color: white;
   float: right;
@@ -60,9 +63,21 @@ a[data-attr="twitter"]:hover{
 a[data-attr="instagram"]:hover{
   color: rgb(160, 31, 121);
 }
-a:not([itemprop="contact"]):hover {
+a:not([itemprop="contact"]):not([itemprop="nav-url"]):hover{
   background-color: #ff2e88;
   color: #fff
+}
+
+a[itemprop="nav-url"]{
+  border-bottom: none;
+  margin: 5px;
+opacity: 0.7;
+color: rgb(194, 122, 134);
+}
+
+a[itemprop="nav-url"]:hover{
+  opacity: 0.9;
+  
 }
 
 .grid {
@@ -1008,4 +1023,42 @@ select.form-control {
 .dark .menu .menu-item.active, .dark .menu .menu-item:hover {
   color: #fff;
   border-color: #ccc
+}
+
+.imageContainer{
+  margin-top: 5rem;
+  height: auto;
+  // background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // // display: grid
+  // // justify-content: center;
+  // align-items: center;
+}
+.imageContainer img{
+  margin: 5x;
+  max-width: 240px;
+}
+.imageContainer img[itemprop="middleImage"]{
+  box-shadow: 0px 2px 38px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 2px 38px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 38px 1px rgba(0,0,0,0.75);
+
+}
+.intro-text{
+  font-size: larger; text-align: center; 
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px){
+.imageContainer img{
+    max-width: 90px;
+}
+.intro-text{
+  font-size:small;
+  
+  
+}
 }

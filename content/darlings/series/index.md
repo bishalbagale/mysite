@@ -6,10 +6,10 @@ date = "2021-12-21"
 
 * Sex Education
 * Rick and Morty
-* Star Wars: The Clone Wars <!-- more -->
+* Star Wars: The Clone Wars
 * Normal People
 * The Mandalorian 
-* Euphoria
+* Euphoria <!-- more -->
 * Mr. Robot
 * Silicon valley
 * The Witcher

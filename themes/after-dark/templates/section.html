@@ -28,20 +28,24 @@
         {% block content %}
             {% block header %}
                 {% if config.extra.after_dark_menu %}
-                    <header>
-                        <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
-                        {% for item in config.extra.after_dark_menu %}
-                            <a itemprop="url"
-                               class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
-                               href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
-                                <span itemprop="name">{{ item.name }}
-                                </span></a>
-                        {% endfor %}
-                        <a itemprop="contact" data-attr="github" href="https://www.github.com/bishalbagale"><i class="fab fa-github"></i></a>
-                        <a itemprop="contact" data-attr="instagram" href="https://www.instagram.com/bagale_bishal"><i class="fab fa-instagram"></i></a>
-                        <a itemprop="contact" data-attr="twitter" href="https://www.twitter.com/bagalebishal_"><i class="fab fa-twitter"></i></a>
-                        </nav>
-                    </header>
+                <header class="nav-header">
+                  <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+                  {% for item in config.extra.after_dark_menu %}
+                      <a itemprop="nav-url"
+                         class="{% if item.url | replace(from="$BASE_URL", to=config.base_url) == current_url %}active{% endif %}"
+                         href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">
+                          <span itemprop="name">[{{ item.name }}]
+                          </span></a>
+            {% endfor %}    
+            
+            <a itemprop="contact" data-attr="github" href="https://www.github.com/bishalbagale"><i class="fab fa-github"></i></a>
+            <a itemprop="contact" data-attr="instagram" href="https://www.instagram.com/bagale_bishal"><i class="fab fa-instagram"></i></a>
+            <a itemprop="contact" data-attr="twitter" href="https://www.twitter.com/bagalebishal_"><i class="fab fa-twitter"></i></a>
+           
+                </nav>
+                
+                  
+              </header>
                 {% endif %}
             {% endblock header %}
 
