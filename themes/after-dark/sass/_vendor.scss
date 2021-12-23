@@ -57,9 +57,9 @@ a[itemprop="contact"]{
 a[itemprop="contact"]:hover{
   opacity: 1;
 }
-a[data-attr="twitter"]:hover{
-  color: rgb(93, 173, 240);
-}
+// a[data-attr="twitter"]:hover{
+//   color: rgb(93, 173, 240);
+// }
 a[data-attr="instagram"]:hover{
   color: rgb(160, 31, 121);
 }
@@ -1054,11 +1054,14 @@ select.form-control {
 
 @media only screen and (max-width: 600px){
 .imageContainer img{
-    max-width: 90px;
+    max-width: 100px;
 }
 .intro-text{
   font-size:small;
   
+}
+a[itemprop="nav-url"]{
+  margin: 0px;
   
 }
 }
