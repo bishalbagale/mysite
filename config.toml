@@ -15,10 +15,11 @@ taxonomies = [
 [extra]
 author = "B.Bagale"
 after_dark_menu = [
-    {url = "$BASE_URL", name = "Blogs"},
-    {url = "$BASE_URL/poems", name = "Poetry"},
+    {url = "$BASE_URL/", name = "Home"},
+    {url = "$BASE_URL/blogs", name = "Blogs"},
+    {url = "$BASE_URL/poems", name = "Show-Off"},
     {url = "$BASE_URL/darlings", name = "Darlings"},
-    
+ 
   
     ]
 
