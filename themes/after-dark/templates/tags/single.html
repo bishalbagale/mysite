@@ -4,6 +4,7 @@
     {% block header %}
         {{ super() }}
     {% endblock header %}
+    <script>document.title = `${window.location.hostname}${window.location.pathname}`</script>
 
     <h1>{{ term.name }}</h1>
 

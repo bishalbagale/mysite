@@ -4,23 +4,24 @@ description = ""
 generate_feed = true
 build_search_index = false
 theme = "after-dark"
+
+taxonomies = [
+ 
+    {name = "tags", feed = true},
+]
 [markdown]
 
 highlight_code = true
-taxonomies = [
-    # You can enable/disable RSS
-    {name = "categories", feed = true},
-    {name = "tags", feed = true},
-    ]
+
 [extra]
 author = "B.Bagale"
 after_dark_menu = [
-    {url = "$BASE_URL/", name = "Home"},
-    {url = "$BASE_URL/blogs", name = "Blogs"},
-    {url = "$BASE_URL/poems", name = "Show-Off"},
-    {url = "$BASE_URL/darlings", name = "Darlings"},
+    {url = "$BASE_URL/", name = "home"},
+    {url = "$BASE_URL/blogs", name = "blogs"},
+    {url = "$BASE_URL/tags", name = "tags"},
+
  
-  
     ]
 
-after_dark_title = "Blogs"
+
+
