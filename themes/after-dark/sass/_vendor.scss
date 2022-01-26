@@ -57,12 +57,8 @@ a[itemprop="contact"]{
 a[itemprop="contact"]:hover{
   opacity: 1;
 }
-// a[data-attr="twitter"]:hover{
-//   color: rgb(93, 173, 240);
-// }
-a[data-attr="instagram"]:hover{
-  color: rgb(160, 31, 121);
-}
+
+
 a:not([itemprop="contact"]):not([itemprop="nav-url"]):hover{
   background-color: #ff2e88;
   color: #fff

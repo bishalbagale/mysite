@@ -5,8 +5,8 @@
     {% block header %}
         {{ super() }}
     {% endblock header %}
-    <title>{% block title %}{{ page.title }}{% endblock title %}</title>
-
+    <!-- <title>{% block title %}{{ page.title }}{% endblock title %}</title> -->
+<script>document.title = `${window.location.hostname}${window.location.pathname}`</script>
 <article itemscope itemtype="https://schema.org/BlogPosting">
     <header>
         <h1 itemprop="headline">{{ page.title }}</h1>
@@ -25,7 +25,7 @@
                 {% elif config.extra.author %}
                     Published by {{ config.extra.author }}
                 {% endif %}
-                {% if page.taxonomies.categories %}
+                <!-- {% if page.taxonomies.categories %}
                     {% set category = page.taxonomies.categories[0] %}
                     in <a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">{{ category }}</a>
                 {% endif %}
@@ -44,12 +44,14 @@
                             {% endif %}
                         {% endif %}
                     {% endfor %}
-                {% endif %}
+                {% endif %} -->
             </p>
             {% block extra_footer %}
             {% endblock extra_footer %}
         </footer>
     {% endblock page_footer %}
+
+    
 </article>
 
 
