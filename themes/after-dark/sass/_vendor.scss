@@ -67,12 +67,12 @@ a:not([itemprop="contact"]):not([itemprop="nav-url"]):hover{
 a[itemprop="nav-url"]{
   border-bottom: none;
   margin: 5px;
-opacity: 0.7;
+opacity: 0.9;
 color: rgb(194, 122, 134);
 }
 
 a[itemprop="nav-url"]:hover{
-  opacity: 0.9;
+  opacity: 1;
   
 }
 
@@ -236,7 +236,7 @@ a[itemprop="nav-url"]:hover{
   overflow: hidden
 }
 
-.hack h1:after {
+.hack h1:not(#h1):after {
   content: "====================================================================================================";
   position: absolute;
   bottom: 10px;
@@ -255,26 +255,31 @@ a[itemprop="nav-url"]:hover{
 .hack h2:before, .hack h3:before, .hack h4:before, .hack h5:before, .hack h6:before {
   display: inline
 }
-
-.hack h2:before {
-  content: "## "
+// .hack h2[itemprop="name"]{
+//   color: yellow;
+// }
+.hack h2[itemprop="name"]:before {
+  font: var(--fa-font-solid);
+  content: "\f0a4 ";
+  font-size: 13px;
+  color: #ff9800;
 }
 
-.hack h3:before {
-  content: "### "
-}
+// .hack h3[itemprop="name"]:before {
+//   content: "### "
+// }
 
-.hack h4:before {
-  content: "#### "
-}
+// .hack h4[itemprop="name"]:before {
+//   content: "#### "
+// }
 
-.hack h5:before {
-  content: "##### "
-}
+// .hack h5[itemprop="name"]:before {
+//   content: "##### "
+// }
 
-.hack h6:before {
-  content: "###### "
-}
+// .hack h6[itemprop="name"]:before {
+//   content: "###### "
+// }
 
 .hack li {
   position: relative;
@@ -1046,6 +1051,7 @@ select.form-control {
 .intro-text{
   font-size: larger; text-align: center; 
   font-weight: bold;
+  color: hsla(60, 100%, 50%, 0.68);
 }
 
 @media only screen and (max-width: 600px){
@@ -1060,4 +1066,7 @@ a[itemprop="nav-url"]{
   margin: 0px;
   
 }
+
+
+
 }
