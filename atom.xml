@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>bishalbagale</title>
+	<link href="https://bishalbagale.com.np/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://bishalbagale.com.np"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-04-11T00:00:00+00:00</updated>
+	<id>https://bishalbagale.com.np/atom.xml</id>
+	<entry xml:lang="en">
+		<title>first things first</title>
+		<published>2022-04-11T00:00:00+00:00</published>
+		<updated>2022-04-11T00:00:00+00:00</updated>
+		<link href="https://bishalbagale.com.np/blogs/entry01/" type="text/html"/>
+		<id>https://bishalbagale.com.np/blogs/entry01/</id>
+		<content type="html">&lt;p&gt;it&#x27;s been a while since i got this site up and running but hadn&#x27;t had any idea about what to
+do in here. there was a blur idea of something like &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;keeping a journal or writing poems&#x2F;stories but 
+well i aint no poet and them words dont rhyme themselves. so, i&#x27;ll be keeping a journal which&#x27;ll rather focus on what i learnt that day.&lt;&#x2F;p&gt;
+&lt;p&gt;starting tomorrow i&#x27;ll be uploading a blog daily about my journey of learning c++ . basically i&#x27;ll be teaching what i learnt that day.or perhaps just rant about what i didnt understand.&lt;&#x2F;p&gt;
+&lt;p&gt;off i go, see you tomorrow.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
